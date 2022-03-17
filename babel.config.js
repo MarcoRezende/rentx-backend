@@ -13,6 +13,7 @@ module.exports = {
           '@shared': './src/shared',
           '@errors': './src/errors',
           '@utils': './src/utils',
+          '@core': './src/@core',
         },
       },
     ],

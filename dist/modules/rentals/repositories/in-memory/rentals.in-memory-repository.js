@@ -3,7 +3,7 @@
 exports.__esModule = true;
 exports.RentalsInMemoryRepository = void 0;
 
-var _baseInMemoryRepository = require("@core/repositories/base-in-memory-repository");
+var _baseInMemoryRepository = require("../../../../@core/repositories/base-in-memory-repository");
 
 var _Rental = require("../../infra/typeorm/entities/Rental");
 

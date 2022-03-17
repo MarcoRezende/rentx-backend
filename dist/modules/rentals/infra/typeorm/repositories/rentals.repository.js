@@ -5,7 +5,7 @@ exports.RentalsRepository = void 0;
 
 var _typeorm = require("typeorm");
 
-var _baseRepository = require("@core/repositories/base-repository");
+var _baseRepository = require("../../../../../@core/repositories/base-repository");
 
 var _Rental = require("../entities/Rental");
 
