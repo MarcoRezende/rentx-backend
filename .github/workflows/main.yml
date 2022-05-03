@@ -41,7 +41,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           source: "., !node_modules"
-          target: "app/api-rentx"
+          target: "~/app/rentx-backend"
           
           
 
