@@ -43,6 +43,19 @@ jobs:
           source: "., !node_modules"
           target: "~/app/rentx-backend"
           
+      - name: Update API    
+      - uses: appleboy/ssh-action@master
+        with: 
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script:
+            cd ~/app/rentx-backend
+            yarn
+            ./node_modules/.bin/typeorm migration:run
+            pm2 restart rentx_api
+          
           
 
      
