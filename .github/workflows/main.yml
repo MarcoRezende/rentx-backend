@@ -53,8 +53,9 @@ jobs:
           script:
             cd ~/app/rentx-backend &&
             yarn &&
-            ./node_modules/.bin/typeorm migration:run &&
             pm2 restart rentx_api
+            ## ./node_modules/.bin/typeorm migration:run &&
+
           
           
 
