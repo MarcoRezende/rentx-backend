@@ -10,7 +10,6 @@ export default async () => {
        * localhost, através do comando docker-compose na instancia do
        * EC2
        */
-      host: 'database_ignite',
       database:
         process.env.NODE_ENV === 'test'
           ? 'rentx_test'
