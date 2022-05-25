@@ -51,9 +51,9 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script:
-            cd ~/app/rentx-backend
-            yarn
-            ./node_modules/.bin/typeorm migration:run
+            cd ~/app/rentx-backend &&
+            yarn &&
+            ./node_modules/.bin/typeorm migration:run &&
             pm2 restart rentx_api
           
           
