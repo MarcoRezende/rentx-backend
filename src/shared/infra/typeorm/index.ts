@@ -7,9 +7,10 @@ export default async () => {
     Object.assign(defaultOptions, {
       /**
        * removemos a configuração de host, pois em produção usaremos o
-       * localhost.
+       * localhost, através do comando docker-compose na instancia do
+       * EC2
        */
-      host: process.env.NODE_ENV === 'test',
+      host: 'database_ignite',
       database:
         process.env.NODE_ENV === 'test'
           ? 'rentx_test'
